@@ -1,0 +1,137 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Lumina Cull",
+      "persona": "The Digital Darkroom",
+      "vibe": "Precision, Invisible, Professional",
+      "archetype": "Swiss & High-Contrast (Modified for Photography)"
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scaling": {
+        "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-medium",
+        "body": "text-base leading-relaxed",
+        "caption": "text-xs tracking-wider uppercase text-muted-foreground"
+      },
+      "rules": [
+        "Headings must use Manrope. Do not use Inter for headings.",
+        "Use tight tracking for all headings larger than 24px.",
+        "Use tabular nums (font-variant-numeric: tabular-nums) for all data/scores."
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": "hsl(240 5% 6%)",
+        "foreground": "hsl(0 0% 98%)",
+        "card": "hsl(240 4% 10%)",
+        "card_foreground": "hsl(0 0% 98%)",
+        "popover": "hsl(240 5% 8%)",
+        "popover_foreground": "hsl(0 0% 98%)",
+        "primary": "hsl(0 0% 98%)",
+        "primary_foreground": "hsl(240 5.9% 10%)",
+        "secondary": "hsl(240 3.7% 15.9%)",
+        "secondary_foreground": "hsl(0 0% 98%)",
+        "muted": "hsl(240 3.7% 15.9%)",
+        "muted_foreground": "hsl(240 5% 64.9%)",
+        "accent": "hsl(212 100% 50%)",
+        "accent_foreground": "hsl(0 0% 98%)",
+        "destructive": "hsl(0 62.8% 30.6%)",
+        "destructive_foreground": "hsl(0 0% 98%)",
+        "border": "hsl(240 3.7% 15.9%)",
+        "input": "hsl(240 3.7% 15.9%)",
+        "ring": "hsl(240 4.9% 83.9%)"
+      },
+      "usage": {
+        "background": "Deep matte charcoal/zinc (not pure black) to reduce eye strain.",
+        "accent": "Electric Blue for 'Select/Keep' actions. Use sparingly.",
+        "destructive": "Muted Red for 'Reject' actions.",
+        "success": "Emerald Green for high scores."
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-12",
+        "section_gap": "gap-8 md:gap-16",
+        "grid_gap": "gap-4"
+      },
+      "grids": {
+        "gallery": "grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4",
+        "dashboard": "grid-cols-1 md:grid-cols-12 gap-6"
+      },
+      "radius": {
+        "default": "rounded-md",
+        "button": "rounded-full",
+        "card": "rounded-lg"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10",
+      "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+      "borders": "border border-white/5",
+      "textures": "Subtle grain overlay on the main background to mimic film stock."
+    },
+    "motion": {
+      "hover": "transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg",
+      "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-500",
+      "micro": "active:scale-95 duration-100"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 font-medium transition-all",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full px-6 py-4",
+      "ghost": "hover:bg-accent hover:text-accent-foreground rounded-md"
+    },
+    "cards": {
+      "image_card": "relative group overflow-hidden rounded-lg border border-border bg-card hover:border-accent/50 transition-colors",
+      "stat_card": "p-6 rounded-xl bg-card border border-border flex flex-col gap-2"
+    },
+    "inputs": {
+      "default": "bg-input/50 border-transparent focus:border-accent focus:ring-1 focus:ring-accent rounded-md h-12 px-4"
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1724011015356-f65e60cc4448?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxjYW1lcmElMjBsZW5zJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NjcxMTQ1MDZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Close up of camera lens for hero section background or side visual."
+      },
+      {
+        "category": "texture_overlay",
+        "url": "https://images.unsplash.com/photo-1766087776834-18e343989a96?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGxpZ2h0JTIwbGVhayUyMHRleHR1cmV8ZW58MHx8fHwxNzY3MTE0NTA4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract light leak for subtle background texture or accent areas."
+      },
+      {
+        "category": "workspace_context",
+        "url": "https://images.unsplash.com/photo-1608682285597-156feb50eb4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoZXIlMjB3b3Jrc3BhY2UlMjBtaW5pbWFsaXN0fGVufDB8fHx8MTc2NzExNDUwNHww&ixlib=rb-4.1.0&q=85",
+        "description": "Minimalist workspace for 'How it works' or 'About' section."
+      }
+    ],
+    "icons": "Use 'lucide-react' for all UI icons. Use thin stroke width (1.5px) for elegance."
+  },
+  "instructions_to_main_agent": [
+    "Implement a 'Dark Mode First' approach. The default theme should be dark/neutral.",
+    "Use the 'Manrope' font for all headings. Import it from Google Fonts.",
+    "The Upload Area should be a massive, cinematic drop zone using the 'texture_overlay' image with low opacity.",
+    "The Gallery View must be dense but breathable. Use a masonry layout if possible, or a strict grid with 'object-cover'.",
+    "Use 'sonner' for all notifications (upload complete, analysis done).",
+    "Ensure all interactive elements have 'data-testid' attributes.",
+    "Do not use gradients for backgrounds. Use solid colors or the provided texture images.",
+    "For the 'Good/Bad' filter, use a toggle group or segmented control, not a dropdown.",
+    "Display AI scores (Sharpness, Exposure) as small, minimal badges on the image card."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'SaaS Blue' gradients. Stick to the defined palette.",
+    "Use 2-3x more padding than usual. Let the photos breathe.",
+    "Micro-interactions are mandatory. Hovering an image should reveal details smoothly.",
+    "Never use 'Inter' for headings.",
+    "Ensure high contrast for text overlaying images (use text-shadow or scrims)."
+  ]
+}
